@@ -73,7 +73,7 @@ public class AddPointServlet extends HttpServlet {
                 collection.add(result, owner);
 
         }
-        if (LoginUsers.checkSession(request.getSession().getId().toString(), token, owner));
+        //if (LoginUsers.checkSession(request.getSession().getId().toString(), token, owner));
         try (PrintWriter out = response.getWriter()) {
             System.out.println(collection.toJSON().toString());
             out.println(collection.toJSON().toString());
